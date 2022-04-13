@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  html, body {
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-size: 32px;
+  }
+  .center {
+    border: 5px solid black;
+    background: rgba(150, 150, 150, .8);
+  }
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-65%);
+    padding: 2%;
+  }
+  input[type="text"] {
+    width: 70%;
+    font-size: 32px;
+  }
+</style>
+
+
+<body style="background-color: <%= hex %>">
+
+<div class="center vertical-center horizontal-center">
+  <h1>Words to Hex Color</h1>
+  
+  <form action="/" method="post">
+    <input type="text" id="color" name="color" placeholder="Color"><br><br>
+  </form>
+  
+  <script>
+    document.getElementById('color').addEventListener("keyup", function(event) {
+      // Number 13 is the "Enter" key on the keyboard
+      if (event.keyCode === 13) {
+        document.getElementById("loading").innerHTML = "Loading...";
+      }
+    });
+  </script>
+  
+  <h1 id="loading"></h1>
+  <h2><%= colorName %></h2>
+  <h2><%= hexDisplay %></h2>
+</div>
+  
+</body>
+</html>
