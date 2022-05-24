@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const ejs = require("ejs");
+require('dotenv').config();
 
 // File with OpenAI
 const Ai = require("./Ai")
@@ -46,5 +47,5 @@ app.use("/", router);
 
 // Start Server
 app.listen(port,function(){
-  console.log("server on port: " + app.get("port"));
+  console.log("http://localhost/" + port);
 });

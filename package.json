@@ -1,18 +1,22 @@
 {
-  "name": "WordsToHex-GPT3",
+  "name": "wordstohex-gpt3",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Node.js website that uses GPT-3 AI to convert a string of words to a Hex color code.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenryTurbedsky/WordsToHex-GPT3.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Henry Turbedsky",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenryTurbedsky/WordsToHex-GPT3/issues"
+  },
+  "homepage": "https://github.com/HenryTurbedsky/WordsToHex-GPT3#readme",
   "dependencies": {
-    "body-parser": "^1.20.0",
-    "ejs": "^3.1.6",
-    "express": "^4.17.3",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
     "openai": "^2.0.5"
   }
 }
