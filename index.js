@@ -47,5 +47,5 @@ app.use("/", router);
 
 // Start Server
 app.listen(port,function(){
-  console.log("http://localhost/" + port);
+  console.log("http://localhost:" + port);
 });
